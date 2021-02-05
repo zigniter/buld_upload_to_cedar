@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Bulk Upload to CEDAR!</title>
+  </head>
+  <body>
+    <fieldset style="width:65%;margin:auto;margin-top: 20px;border: 1px;">
+       <img src="images/vodan.png">
+        <h3>Bulk Upload to CEDAR!</h3>
+        <form name="cedar" method="POST" action="src/cedar.php" enctype="multipart/form-data">
+            <div class="form-group">
+              <label for="source_file">Source File Path</label>
+              <input type="file" name="source_file" class="form-control-file" id="source_file">
+            </div>
+            <div class="form-group">
+                <label for="folder_id">ENCODED HOME FOLDER ID</label>
+                <input type="text" name="folder_id" class="form-control" id="folder_id">
+            </div>
+            <div class="form-group">
+              <label for="token">CEDAR Account Token</label>
+              <input type="text" name="token" class="form-control" id="token">
+            </div>
+            <div class="form-group">
+                <label for="field_properties">Field Properties</label>
+                <textarea name="field_properties" class="form-control" id="field_properties" rows="7"></textarea>
+            </div>
+            <div class="form-group">
+              <label for="template_id">Template Id (Schema is based on template)</label>
+              <input type="text" name="template_id" class="form-control" id="template_id" placeholder="fed67490-6095-488f-b4de-3871c700b929">
+            </div>
+            <div class="form-group">
+              <label for="description">Schema description</label>
+              <input type="text" name="description" class="form-control" id="description">
+            </div>
+            <div class="form-group">
+              <label for="createdBy">User Id </label>
+              <input type="text" name="user_id" class="form-control" id="createdBy" placeholder="c14beb17-0e85-4e6e-9b74-706fe0566635">
+            </div>
+            <input type="submit" class="btn btn-primary" value="Submit to CEDAR">
+        </form>
+    </fieldset>
+ </body>
+</html>

@@ -1,0 +1,7 @@
+PatientID,Sex,Age,TravelHistory,Exposed,Cough,SampleType,TestResult
+TG0016,Male,21,No,Unknown,Yes,Nasal Swabs,Positive
+TG0017,Male,20,No,No,No,Pharyngeal Swabs,Positive
+TG0018,Male,20,No,Unknown,No,Pharyngeal Swabs,Positive
+TG0019,Male,20,No,No,No,Nasal Swabs,Positive
+TG0020,Male,20,No,Unknown,No,Pharyngeal Swabs,Positive
+TG0021,Male,20,No,No,Yes,Nasal Swabs,Positive
